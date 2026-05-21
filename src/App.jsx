@@ -21,7 +21,7 @@ function App() {
         <Route path='/project' element={<Project/>} />
         <Route path='/contact' element={<Contact/>} />
      </Routes> */}
-     <section id='home'>
+     {/* <section id='home'>
       <Home/>
       </section>
      <section id='about'>
@@ -29,13 +29,13 @@ function App() {
       </section>
      <section id='skill'>
       <Skill/>
-      </section>
-     <section id='project'>
+      </section> */}
+     {/* <section id='project'>
       <Project/>
-      </section>
-     <section id='resume'>
+      </section> */}
+     {/* <section id='resume'>
       <Resume/>
-      </section>
+      </section> */}
      <section id='contact'>
       <Contact/>
       </section>
