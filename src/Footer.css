@@ -1,0 +1,14 @@
+.footerpage{
+    width: 100%;
+    height: 200px;
+    border:1px solid black;
+    background-color: black;
+}
+@media screen and (max-width:480px){
+    .footerlist a{
+        display: none;
+    }
+    .socialmedia{
+        flex-wrap: wrap;
+    }
+}

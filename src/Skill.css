@@ -1,0 +1,40 @@
+.skillbox{
+    height: 950px;
+    margin-bottom: 20px;
+}
+.div-box{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background-color:rgb(220, 228, 235);
+}
+.div-box:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15pc rgba(0, 0, 0, 0.3);
+}
+.skill{
+    padding-left: 100px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:480px){
+    .skillheadtext{
+        text-align:center;
+    }
+    .skillboxicon{
+        margin-left: -20px !important;
+    }
+    .div-box{
+        width:90% ;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .skillheadtext{
+        text-align:center;
+    }
+       .skillboxicon{
+        margin-left: -20px !important;
+    }
+}

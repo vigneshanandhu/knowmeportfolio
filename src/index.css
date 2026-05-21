@@ -1,0 +1,15 @@
+body{
+    cursor: pointer;
+    /* background: linear-gradient(to right,#f8fbff, #e3f2fd); */
+    /* background: linear-gradient(to right,#afccf2, #e3f2fd); */
+   
+   background: linear-gradient(135deg,#0f172a,#021038,#026172);
+   color:white;
+    font-family: 'poppins', sans-serif;
+    /* background: linear-gradient(to right,#0f172a, #1e293b);
+    color: white; */
+}
+html{
+    scroll-behavior: smooth;
+   
+}
