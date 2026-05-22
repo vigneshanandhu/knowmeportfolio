@@ -7,9 +7,9 @@ const Project = () => {
     <div className='container mb-5'>
       <h1 className='text-center mt-3'>My Projects</h1>
       <div className="row mt-3">
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2 ">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+            <img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>
@@ -20,9 +20,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 mt-2">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+            <img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>
@@ -33,9 +33,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 mt-2">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+            <img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>
@@ -46,9 +46,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 mt-2">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+    <img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>
@@ -59,9 +59,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 mt-2">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+<img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>
@@ -72,9 +72,9 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 my-sm-2">
+        <div className=" col-12 col-sm-6 col-md-6 col-lg-3 mt-md-2 mt-2">
           <div className="card bg-white ">
-            <img className='img-fluid rounded-0 border-0' src={Projectimg1} alt="" />
+<img className='card-img-top img-fluid rounded-0 border-0   mt-0' style={{height:'200px'}} src={Projectimg1} alt="" />
             <div className="card-body">
               <h4 className='card-title'>Portfolio</h4>
               <p className='card-text'>the reactjs project portfolio know me </p>

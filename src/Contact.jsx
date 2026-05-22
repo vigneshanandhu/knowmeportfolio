@@ -26,9 +26,9 @@ const Contact = () => {
      });
   };
   return (
-    <div className='container'>
+    <div className='container mt-5 w-50 mb-5'>
       <div className="row">
-        <div className="col-12 col-lg-6">
+        <div className="col-12">
           <h1 className='text-center mt-3'>Contact</h1>
           <form className='mt-5' action=""  ref={form} onSubmit={sendEmail} >
             <div className="form-group mt-2">

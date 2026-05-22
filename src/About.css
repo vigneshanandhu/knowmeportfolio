@@ -1,96 +1,9 @@
-.aboutimg {
-    margin-left: 150px;
-    margin-top: 100px;
+.hoverin{
+    display: none;
 }
-
-.about-content {
-    margin-top: 90px;
-}
-
-
-
-.studies {
-    margin-top: 50px;
-    height: auto;
-    width: 300px;
-    border: 1px solid black;
-    box-shadow: 0 0 15pc rgba(0, 0, 0, 0.3);
-}
-
 .studies:hover .studyhead{
     display: none;
 }
-
-.studydiv {
-    margin-left: 170px;
-    margin-bottom: 100px;
-    align-items: flex-start;
-}
-
-.studyin {
-    display: none;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.studies:hover .studyin {
+.studies:hover .hoverin{
     display: block;
-    
 }
-@media screen and (max-width:768px){
-    .aboutbox{
-        display: block;
-        flex-wrap: wrap-reverse;
-    }
-    .aboutimg {
-        margin-left: 180px;
-        margin-top: 50px;
-    }
-    .about-content{
-        text-align: center;
-        margin-left: 20px;
-        margin-right: 20px;
-         width: auto !important;
-
-    }
-    .studydiv{
-        display:block;
-        flex-wrap: wrap;
-        margin-left: 100px;
-    }
-    .studies{
-        margin-left: 130px;
-    }
-}
-
-
-@media screen and (max-width:480px){
-    .aboutbox{
-        display: block;
-        flex-wrap: wrap-reverse;
-    }
-    .aboutimg {
-        margin-left: 80px !important;
-        margin-right: 50px;
-        margin-top: 50px;
-    }
-    .about-content{
-        text-align: center;
-        margin-left: 20px;
-        margin-right: 20px;
-         width: auto !important;
-
-    }
-    .studydiv{
-        display:block;
-        flex-wrap: wrap;
-        margin-left: -10px !important;
-        margin-right: 50px;
-    }
-    .studies{
-       position: relative;
-       left: -30px;
-    }
-}
-

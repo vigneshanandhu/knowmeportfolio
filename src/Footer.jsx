@@ -1,31 +1,53 @@
+
 import React from 'react'
-import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footerpage text-light'>
-       <div className='d-flex justify-content-around'>
-           <div className='mt-5'>
-                  <h2>Vignesh V</h2>
-                    <p>Frontend & Full Stack Developer</p>
-           </div>
+    <div className='container border-top'>
+      <div className="row mt-4">
+        <div className="col-6 col-md-4">
+          <h2>Vignesh V</h2>
+          <p>Frontend & Full Stack Developer</p>
+        </div>
+        <div className="col d-none col-md-6 d-md-block mt-4">
+          <ul className='list-inline m-0'>
 
-        <div className='footerlist d-flex flex-column mt-3'>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skill">Skills</a>
-            <a href="#project">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div className='socialmedia d-flex flex-row gap-3 mt-5'>
-             <a href="https://www.linkedin.com/in/vigneshv11/" target='_blank'><i class="fa-brands fa-square-linkedin"></i></a>
-                <a href="https://github.com/vigneshanandhu?tab=repositories" target='_blank'><i class="fa-brands fa-github text-primary"></i></a>
-                <a href="mailto:vigneshanandhu2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-        </div>
-        <p className='text-center mt-4'>@2026 Vignesh. All Rights Reserved</p>
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#home">Home</a>
+            </li>
 
-    
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#about">About</a>
+            </li>
+
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#skill">Skills</a>
+            </li>
+
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#project">Projects</a>
+            </li>
+
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#resume">Resume</a>
+            </li>
+
+            <li className='list-inline-item mx-2'>
+              <a className='text-decoration-none' href="#contact">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+        <div className="col-6 col-md-2 d-flex gap-3 justify-content-center mt-4">
+          <a href="https://www.linkedin.com/in/vigneshv11/" target='_blank'><i class="fa-brands fa-square-linkedin"></i></a>
+          <a href="https://github.com/vigneshanandhu?tab=repositories" target='_blank'><i class="fa-brands fa-github text-primary"></i></a>
+          <a href="mailto:vigneshanandhu2003@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div className="col-12 text-center">
+          <p className=''>@2026 Vignesh. All Rights Reserved</p>
+        </div>
+      </div>
     </div>
   )
 }
