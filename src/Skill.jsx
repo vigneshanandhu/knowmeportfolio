@@ -1,108 +1,152 @@
-import React from 'react'
-import './Skill.css'
+import React, { useEffect, useRef, useState } from 'react'
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaPython,
+  FaGitAlt,
+  FaGithub,
+} from 'react-icons/fa'
+
+import {
+  SiTailwindcss,
+  SiDjango,
+  SiMysql,
+  SiMongodb,
+  SiPostman,
+
+} from 'react-icons/si'
+
+import {VscVscode} from 'react-icons/vsc'
+
 const Skill = () => {
-    const progress = 100
-    const progress1 = 90
-    const progress2 = 85
-    const progress3 = 75
-    const progress4 = 90
-    const progress5 = 85
-    const progress6 = 80
-    const progress7 = 75
-    const progress8 = 70
-    const progress9 = 80
-    const progress10 = 70
-    return (
-        <div className='skillbox mx-5'>
-            <h1 className='text-center mt-3'>Technical Skills</h1>
-            <p className='text-center mt-3'>Technologies I use to build responsive and scalable web applications. </p>
-            <h3 className='skillheadtext mx-5'>Frontend</h3>
-            <div className='skillboxicon d-flex gap-5  text-center pt-5 skill'>
-               
-                    <div className='div-box pt-2 rounded '> <i class="fa-brands fa-html5"></i>HTML5
-                        <div className="progress">
-                            <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress1}%` }}>{progress1}%</div>
-                        </div>
-                    </div>
 
-                
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-css3"></i>CSS3
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress2}%` }}>{progress2}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-js"></i>JavaScript(ES6+)
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress3}%` }}>{progress3}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'> <i class="fa-brands fa-bootstrap"></i>Bootstrap5
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress4}%` }}>{progress4}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-tailwind-css"></i>Tailwind CSS
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress5}%` }}>{progress5}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-react"></i>ReactJS
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress6}%` }}>{progress6}%</div>
-                    </div>
-                </div>
-            </div>
-            <h3 className=' skillheadtext mx-5 mt-5'>Backend</h3>
-            <div className='skillboxicon d-flex gap-5  text-center pt-5 skill'>
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-python"></i>Python
-                     <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: `${progress7}%`}}>{progress7}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'>Django
-                     <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: `${progress8}%`}}>{progress8}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'>RestAPI
-                     <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: `${progress9}%`}}>{progress9}%</div>
-                    </div>
-                </div>
-            </div>
-            <h3 className='skillheadtext mx-5 mt-5'>Database</h3>
-            <div className='skillboxicon d-flex gap-5  text-center pt-5 skill'>
-                <div className='div-box pt-2 rounded'>MySQL
-                     <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: `${progress10}%`}}>{progress10}%</div>
-                    </div>
-                </div>
-            </div>
-            <h3 className='skillheadtext mx-5 mt-5'>Tools</h3>
-            <div className='skillboxicon d-flex gap-5  text-center pt-5 skill'>
-                <div className='div-box pt-2 rounded'>Git\
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress4}%` }}>{progress4}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'><i class="fa-brands fa-github"></i>GitHub
-                <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress}%` }}>{progress}%</div>
-                    </div></div>
-                <div className='div-box pt-2 rounded'>Visual Studio
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress}%` }}>{progress}%</div>
-                    </div>
-                </div>
-                <div className='div-box pt-2 rounded'>Postman
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ width: `${progress}%` }}>{progress}%</div>
-                    </div>
-                </div>
+  const skillsRef = useRef(null)
+  const [startAnimation, setStartAnimation] = useState(false)
 
-            </div>
-        </div>
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStartAnimation(true)
+        }
+      },
+      { threshold: 0.3 }
     )
+
+    if (skillsRef.current) {
+      observer.observe(skillsRef.current)
+    }
+
+    return () => {
+      if (skillsRef.current) {
+        observer.unobserve(skillsRef.current)
+      }
+    }
+  }, [])
+
+  const frontendSkills = [
+    { name: 'HTML', icon: <FaHtml5 />, percentage: 95 },
+    { name: 'CSS', icon: <FaCss3Alt />, percentage: 90 },
+    { name: 'JavaScript', icon: <FaJs />, percentage: 85 },
+    { name: 'React JS', icon: <FaReact />, percentage: 90 },
+    { name: 'Bootstrap', icon: <FaBootstrap />, percentage: 92 },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, percentage: 80 },
+  ]
+
+  const backendSkills = [
+    { name: 'Python', icon: <FaPython />, percentage: 88 },
+    { name: 'Django', icon: <SiDjango />, percentage: 85 },
+    { name: 'REST API', icon: <SiDjango />, percentage: 80 },
+  ]
+
+  const databaseSkills = [
+    { name: 'MySQL', icon: <SiMysql />, percentage: 85 },
+    { name: 'MongoDB', icon: <SiMongodb />, percentage: 75 },
+  ]
+
+  const toolsSkills = [
+    { name: 'Git', icon: <FaGitAlt />, percentage: 90 },
+    { name: 'GitHub', icon: <FaGithub />, percentage: 92 },
+    { name: 'VS Code', icon: <VscVscode />, percentage: 95 },
+    { name: 'Postman', icon: <SiPostman />, percentage: 85 },
+  ]
+
+  const renderSkills = (skills) => {
+    return skills.map((skill, index) => (
+      <div key={index} className="mb-4">
+
+        <div className="d-flex justify-content-between align-items-center mb-2">
+          <h6 className="mb-0 d-flex align-items-center gap-2">
+            <span style={{ fontSize: '22px' }}>{skill.icon}</span>
+            {skill.name}
+          </h6>
+
+          <span>{skill.percentage}%</span>
+        </div>
+
+        <div
+          className="progress"
+          style={{ height: '10px' }}
+        >
+          <div
+            className="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            style={{
+              width: startAnimation ? `${skill.percentage}%` : '0%',
+              transition: 'width 2s ease-in-out',
+            }}
+          ></div>
+        </div>
+
+      </div>
+    ))
+  }
+
+  return (
+    <div className='container py-5' ref={skillsRef}>
+
+      <h1 className='text-center mb-5'>Skills</h1>
+
+      <div className="row g-4">
+
+        {/* Frontend */}
+        <div className="col-12 col-md-6">
+          <div className="shadow p-4 rounded h-100">
+            <h4 className='text-center mb-4'>Frontend</h4>
+            {renderSkills(frontendSkills)}
+          </div>
+        </div>
+
+        {/* Backend */}
+        <div className="col-12 col-md-6">
+          <div className="shadow p-4 rounded h-100">
+            <h4 className='text-center mb-4'>Backend</h4>
+            {renderSkills(backendSkills)}
+          </div>
+        </div>
+
+        {/* Database */}
+        <div className="col-12 col-md-6">
+          <div className="shadow p-4 rounded h-100">
+            <h4 className='text-center mb-4'>Database</h4>
+            {renderSkills(databaseSkills)}
+          </div>
+        </div>
+
+        {/* Tools */}
+        <div className="col-12 col-md-6">
+          <div className="shadow p-4 rounded h-100">
+            <h4 className='text-center mb-4'>Tools</h4>
+            {renderSkills(toolsSkills)}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
 }
 
 export default Skill

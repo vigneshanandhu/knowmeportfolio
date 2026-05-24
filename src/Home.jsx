@@ -1,12 +1,12 @@
 
 import React from 'react'
 import myImage from './assets/Hero.png'
-import './style.css'
+import './Home.css'
 
 const Home = () => {
   return (
     <div className='container my-5'>
-      <div className="row align-items-center">
+      <div className="row align-items-center ">
         <div className="col-12 col-md-6 mt-5 text-center text-md-start ">
           <h1 className='mt-2'>I'm Vignesh V</h1>
         <div className="title-container position-relative d-flex justify-content-center justify-content-md-start">

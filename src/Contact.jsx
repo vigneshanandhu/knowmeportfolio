@@ -26,17 +26,18 @@ const Contact = () => {
      });
   };
   return (
-    <div className='container mt-5 w-50 mb-5'>
-      <div className="row">
-        <div className="col-12">
-          <h1 className='text-center mt-3'>Contact</h1>
-          <form className='mt-5' action=""  ref={form} onSubmit={sendEmail} >
+    <div className='container mt-5 mb-5'>
+      <h1 className='text-center mt-3'>Contact</h1>
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8 ">
+          
+          <form className='mt-5 ' action=""  ref={form} onSubmit={sendEmail} >
             <div className="form-group mt-2">
               <label className='form-label'>Name</label>
               <input
                 type="text"
                 name="user_name"
-                className='form-control inputbox'
+                className='form-control'
                 placeholder='Enter your name'
                 required
               />
@@ -47,7 +48,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="user_email"
-                className='form-control inputbox'
+                className='form-control '
                 placeholder='Enter your email'
                 required
               />
@@ -58,7 +59,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
-                className='form-control inputbox'
+                className='form-control '
                 placeholder='Enter subject'
                 required
               />
@@ -69,7 +70,7 @@ const Contact = () => {
               <textarea
                 name="message"
                 rows="5"
-                className='form-control inputbox'
+                className='form-control '
                 placeholder='Enter your message'
                 required
               ></textarea>
