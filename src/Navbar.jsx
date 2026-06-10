@@ -4,6 +4,7 @@ import About from './About'
 import Project from './Project'
 import Resume from './Resume'
 import Contact from './Contact'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -25,27 +26,27 @@ const Navbar = () => {
           <ul className='list-inline m-0'>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#home">Home</a>
+              <Link className='text-decoration-none'to='/home'>Home</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#about">About</a>
+              <Link className='text-decoration-none' to='/about'>About</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#skill">Skills</a>
+              <Link className='text-decoration-none' to='/skill'>Skills</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#project">Projects</a>
+              <Link className='text-decoration-none' to='/project'>Projects</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#resume">Resume</a>
+              <Link className='text-decoration-none' to='/resume'>Resume</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
-              <a className='text-decoration-none' href="#contact">Contact</a>
+              <Link className='text-decoration-none' to='/contact'>Contact</Link>
             </li>
 
           </ul>
@@ -56,12 +57,12 @@ const Navbar = () => {
         <div className="col-md-3 d-none d-md-block text-end">
 
           <button className='btn btn-primary'>
-            <a
+            <Link
               className='text-light text-decoration-none'
-              href="#contact"
+              to='/contact'
             >
               Lets Talk
-            </a>
+            </Link>
           </button>
 
         </div>
@@ -91,27 +92,27 @@ const Navbar = () => {
           >
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#home">Home</a>
+              <Link className='text-decoration-none' to='/home'>Home</Link>
             </li>
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#about">About</a>
+              <Link className='text-decoration-none' to='/about'>About</Link>
             </li>
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#skill">Skills</a>
+              <Link className='text-decoration-none' to='/skill'>Skills</Link>
             </li>
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#project">Projects</a>
+              <Link className='text-decoration-none' to='/project'>Projects</Link>
             </li>
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#resume">Resume</a>
+              <Link className='text-decoration-none' to='/resume'>Resume</Link>
             </li>
 
             <li className="list-group-item">
-              <a className='text-decoration-none' href="#contact">Contact</a>
+              <Link className='text-decoration-none' to='/contact'>Contact</Link>
             </li>
 
           </ul>

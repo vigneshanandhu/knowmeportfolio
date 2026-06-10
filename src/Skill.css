@@ -18,6 +18,7 @@
     padding-left: 100px;
     flex-wrap: wrap;
 }
+
 @media screen and (max-width:480px){
     .skillheadtext{
         text-align:center;

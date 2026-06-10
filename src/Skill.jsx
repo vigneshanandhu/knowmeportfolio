@@ -16,10 +16,13 @@ import {
   SiMysql,
   SiMongodb,
   SiPostman,
-
 } from 'react-icons/si'
 
-import {VscVscode} from 'react-icons/vsc'
+import { VscVscode } from 'react-icons/vsc'
+
+/* AOS */
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Skill = () => {
 
@@ -27,6 +30,13 @@ const Skill = () => {
   const [startAnimation, setStartAnimation] = useState(false)
 
   useEffect(() => {
+
+    // AOS Initialization
+    AOS.init({
+      duration: 1200,
+      once: true,
+    })
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -80,7 +90,9 @@ const Skill = () => {
 
         <div className="d-flex justify-content-between align-items-center mb-2">
           <h6 className="mb-0 d-flex align-items-center gap-2">
-            <span style={{ fontSize: '22px' }}>{skill.icon}</span>
+            <span style={{ fontSize: '22px' }}>
+              {skill.icon}
+            </span>
             {skill.name}
           </h6>
 
@@ -108,12 +120,20 @@ const Skill = () => {
   return (
     <div className='container py-5' ref={skillsRef}>
 
-      <h1 className='text-center mb-5'>Skills</h1>
+      <h1
+        className='text-center mb-5'
+        data-aos="fade-down"
+      >
+        Skills
+      </h1>
 
       <div className="row g-4">
 
         {/* Frontend */}
-        <div className="col-12 col-md-6">
+        <div
+          className="col-12 col-md-6"
+          data-aos="fade-right"
+        >
           <div className="shadow p-4 rounded h-100">
             <h4 className='text-center mb-4'>Frontend</h4>
             {renderSkills(frontendSkills)}
@@ -121,7 +141,10 @@ const Skill = () => {
         </div>
 
         {/* Backend */}
-        <div className="col-12 col-md-6">
+        <div
+          className="col-12 col-md-6"
+          data-aos="fade-left"
+        >
           <div className="shadow p-4 rounded h-100">
             <h4 className='text-center mb-4'>Backend</h4>
             {renderSkills(backendSkills)}
@@ -129,7 +152,10 @@ const Skill = () => {
         </div>
 
         {/* Database */}
-        <div className="col-12 col-md-6">
+        <div
+          className="col-12 col-md-6"
+          data-aos="zoom-in"
+        >
           <div className="shadow p-4 rounded h-100">
             <h4 className='text-center mb-4'>Database</h4>
             {renderSkills(databaseSkills)}
@@ -137,7 +163,10 @@ const Skill = () => {
         </div>
 
         {/* Tools */}
-        <div className="col-12 col-md-6">
+        <div
+          className="col-12 col-md-6"
+          data-aos="flip-left"
+        >
           <div className="shadow p-4 rounded h-100">
             <h4 className='text-center mb-4'>Tools</h4>
             {renderSkills(toolsSkills)}
