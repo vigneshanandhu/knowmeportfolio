@@ -56,7 +56,7 @@ const Resume = () => {
                         <button className='btn btn-primary'>
                             <a
                                 className='text-white text-decoration-none'
-                                href="/vigneshResume.pdf"
+                                href="/VigneshResume.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -67,8 +67,8 @@ const Resume = () => {
                         <button className='btn btn-primary'>
                             <a
                                 className='text-white text-decoration-none'
-                                download="vigneshResume.pdf"
-                                href="/vigneshResume.pdf"
+                                download="VigneshResume.pdf"
+                                href="/VigneshResume.pdf"
                             >
                                 Download
                             </a>

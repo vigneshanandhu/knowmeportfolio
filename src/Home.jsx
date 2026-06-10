@@ -52,7 +52,7 @@ const Home = () => {
             <button className='btn btn-primary'>
               <a
                 className='text-light text-decoration-none'
-                href="/vigneshResume.pdf"
+                href="/VigneshResume.pdf"
                 download
                 target='_blank'
                 rel='noopener noreferrer'
@@ -69,7 +69,7 @@ const Home = () => {
               <i className="fa-brands fa-square-linkedin"></i>
             </a>
 
-            <a href="https://github.com/vigneshanandhu?tab=repositories" target='_blank'>
+            <a href="https://github.com/vigneshanandhu" target='_blank'>
               <i className="fa-brands fa-github text-primary"></i>
             </a>
 
