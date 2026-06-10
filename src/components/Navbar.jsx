@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Home from './Home'
-import About from './About'
+import About from '../About'
 import Project from './Project'
 import Resume from './Resume'
 import Contact from './Contact'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -26,7 +26,7 @@ const Navbar = () => {
           <ul className='list-inline m-0'>
 
             <li className='list-inline-item mx-2'>
-              <Link className='text-decoration-none'to='/home'>Home</Link>
+              <Link className='text-decoration-none' to='/home'>Home</Link>
             </li>
 
             <li className='list-inline-item mx-2'>
